@@ -1,0 +1,19 @@
+nuclei:
+    dataset: Nuclei
+    image_dir: '../data/nuclei/train/image/'
+    mask_dir: '../data/nuclei/train/mask/'
+    predictions_dir_1: 'logs/nuclei/test/saved_images_1/'
+    predictions_dir_2: 'logs/nuclei/test/saved_images_2/'
+spleen:
+    dataset: Spleen
+    image_dir: '../data/spleen/train/image/'
+    mask_dir: '../data/spleen/train/mask/'
+    predictions_dir_1: 'logs/spleen/test/saved_images_1/'
+    predictions_dir_2: 'logs/spleen/test/saved_images_2/'
+heart:
+    dataset: Heart
+    image_dir: '../data/heart/train/image/'
+    mask_dir: '../data/heart/train/mask/'
+    predictions_dir_1: 'logs/heart/test/saved_images_1/'
+    predictions_dir_2: 'logs/heart/test/saved_images_2/'
+
