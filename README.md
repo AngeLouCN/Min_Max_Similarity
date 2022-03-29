@@ -18,3 +18,23 @@ conda install opencv-python pillow numpy matplotlib
 ```
 git clone https://github.com/AngeLouCN/Min_Max_Similarity
 ```
+## Data Preparation
+
+We use three dataset to test its performance:
+- Kvasir-instrument
+- EndoVis'17
+- Cochlear Implant
+
+**File structure**
+```
+|-- data
+|   |-- kvasir
+|   |   |-- image
+|   |   |-- mask
+|   |-- EndoVis17
+|   |   |-- image
+|   |   |-- mask
+|   |-- cochlear
+|   |   |-- image
+|   |   |-- mask
+```
