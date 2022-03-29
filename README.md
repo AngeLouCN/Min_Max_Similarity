@@ -62,4 +62,4 @@ You can change the hyper-parameters like labeled ratio, leanring rate, and e.g. 
 You can change the dataset name in ```test.py``` and run the code.
 
 ## Segmentation Performance
-<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/result_vis.jpg" width="800" height="500" alt="Result"/></div>
+<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/result_vis.jpg" width="800" height="600" alt="Result"/></div>
