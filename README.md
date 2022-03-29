@@ -50,3 +50,9 @@ We use three dataset to test its performance:
 |   |   |   |--image
 |   |   |   |--mask
 ```
+
+**You can also test on some other public medical image segmentation dataset with above file architecture**
+
+## Usage
+
+You can change the hyper-parameters in ```train_mms.py```, and directly run the code.
