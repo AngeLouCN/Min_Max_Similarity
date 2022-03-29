@@ -64,4 +64,4 @@ You can change the dataset name in ```test.py``` and run the code.
 ## Segmentation Performance
 <div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/result_vis.jpg" width="650" height="550" alt="Result"/></div>
 <p align="center"><b>Fig. 2. Visual segmentation results.</b></p>
-<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/result.jpg" width="1000" height="500" alt="Result"/></div>
+<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/result.jpg" width="800" height="350" alt="Result"/></div>
