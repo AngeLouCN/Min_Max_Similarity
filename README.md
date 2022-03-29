@@ -29,12 +29,24 @@ We use three dataset to test its performance:
 ```
 |-- data
 |   |-- kvasir
-|   |   |-- image
-|   |   |-- mask
+|   |   |-- train
+|   |   |   |--image
+|   |   |   |--mask
+|   |   |-- test
+|   |   |   |--image
+|   |   |   |--mask
 |   |-- EndoVis17
-|   |   |-- image
-|   |   |-- mask
+|   |   |-- train
+|   |   |   |--image
+|   |   |   |--mask
+|   |   |-- test
+|   |   |   |--image
+|   |   |   |--mask
 |   |-- cochlear
-|   |   |-- image
-|   |   |-- mask
+|   |   |-- train
+|   |   |   |--image
+|   |   |   |--mask
+|   |   |-- test
+|   |   |   |--image
+|   |   |   |--mask
 ```
