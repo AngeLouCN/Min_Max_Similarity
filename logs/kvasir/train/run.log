@@ -1,0 +1,25 @@
+2022-03-29 14:11:12,047 Split Percentage : 1 Labeled Data Ratio : 0.5
+2022-03-29 14:13:18,798 Split Percentage : 1 Labeled Data Ratio : 0.5
+2022-03-29 14:13:18,798 Split Percentage : 1 Labeled Data Ratio : 0.5
+2022-03-29 14:13:24,141 train_loader_1 118 train_loader_2 118 unlabeled_train_loader 236 val_loader 118
+2022-03-29 14:13:24,141 train_loader_1 118 train_loader_2 118 unlabeled_train_loader 236 val_loader 118
+2022-03-29 14:13:54,345 Split Percentage : 1 Labeled Data Ratio : 0.5
+2022-03-29 14:13:54,345 Split Percentage : 1 Labeled Data Ratio : 0.5
+2022-03-29 14:13:54,345 Split Percentage : 1 Labeled Data Ratio : 0.5
+2022-03-29 14:13:54,501 train_loader_1 118 train_loader_2 118 unlabeled_train_loader 236 val_loader 118
+2022-03-29 14:13:54,501 train_loader_1 118 train_loader_2 118 unlabeled_train_loader 236 val_loader 118
+2022-03-29 14:13:54,501 train_loader_1 118 train_loader_2 118 unlabeled_train_loader 236 val_loader 118
+2022-03-29 14:14:24,548 Split Percentage : 1 Labeled Data Ratio : 0.5
+2022-03-29 14:14:24,720 train_loader_1 118 train_loader_2 118 unlabeled_train_loader 236 val_loader 118
+2022-03-29 14:15:44,443 2022-03-29 14:15:44.443073 Epoch [001/100], total_loss : 0.9204
+2022-03-29 14:15:44,443 Train loss: 0.9204239602816306
+2022-03-29 14:16:04,251 Validation dice coeff model 1: 0.15279566836940284
+2022-03-29 14:16:04,251 Validation dice coeff model 1: 0.15659182975810135
+2022-03-29 14:16:05,907 current best dice coef model 1 0.15279566836940284, model 2 0.15659182975810135
+2022-03-29 14:16:05,907 current patience :0
+2022-03-29 14:17:23,829 2022-03-29 14:17:23.829613 Epoch [002/100], total_loss : 0.9085
+2022-03-29 14:17:23,845 Train loss: 0.9085463573366909
+2022-03-29 14:17:43,565 Validation dice coeff model 1: 0.1608660936699035
+2022-03-29 14:17:43,565 Validation dice coeff model 1: 0.17657171366691626
+2022-03-29 14:17:45,126 current best dice coef model 1 0.1608660936699035, model 2 0.17657171366691626
+2022-03-29 14:17:45,126 current patience :0
