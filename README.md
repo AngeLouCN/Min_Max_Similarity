@@ -55,4 +55,8 @@ We use three dataset to test its performance:
 
 ## Usage
 
-You can change the hyper-parameters in ```train_mms.py```, and directly run the code.
+- **Training:**
+You can change the hyper-parameters like labeled ratio, leanring rate, and e.g. in ```train_mms.py```, and directly run the code.
+
+- **Testing:**
+You can change the dataset name in ```test.py``` and run the code.
