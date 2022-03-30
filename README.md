@@ -4,6 +4,9 @@ This repository contains the implementation of a novel contrastive learning base
 <div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/mms.jpg" width="1000" height="450" alt="Result"/></div>
 <p align="center"><b>Fig. 1. The architecture of Min-Max Similarity.</b></p>
 
+**:fire: NEWS :fire:**
+**The full paper is available:** [Min-Max Similarity](https://arxiv.org/abs/2203.15177)
+
 ## Environment
 
 - python==3.6
