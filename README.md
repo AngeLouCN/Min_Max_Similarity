@@ -45,13 +45,7 @@ We use three dataset to test its performance:
 |   |   |-- test
 |   |   |   |--image
 |   |   |   |--mask
-|   |-- cochlear
-|   |   |-- train
-|   |   |   |--image
-|   |   |   |--mask
-|   |   |-- test
-|   |   |   |--image
-|   |   |   |--mask
+......
 ```
 
 **You can also test on some other public medical image segmentation dataset with above file architecture**
