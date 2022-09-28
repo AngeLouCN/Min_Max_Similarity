@@ -1,7 +1,7 @@
 # Min_Max_Similarity
 A contrastive learning based semi-supervised segmentation network for medical image segmentation
 This repository contains the implementation of a novel contrastive learning based semi-segmentation networks to segment the surgical tools.
-<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/mms.jpg" width="1000" height="450" alt="Result"/></div>
+<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/architecture.jpg" width="1000" height="450" alt="Result"/></div>
 <p align="center"><b>Fig. 1. The architecture of Min-Max Similarity.</b></p>
 
 **:fire: NEWS :fire:**
@@ -65,10 +65,9 @@ You can change the hyper-parameters like labeled ratio, leanring rate, and e.g. 
 You can change the dataset name in ```test.py``` and run the code.
 
 ## Segmentation Performance
-<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/result_vis.jpg" width="650" height="550" alt="Result"/></div>
+<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/seg_result.jpg" width="650" height="550" alt="Result"/></div>
 <p align="center"><b>Fig. 2. Visual segmentation results.</b></p>
-<div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/result.jpg" width="800" height="350" alt="Result"/></div>
-<p align="center"><b>Table 1. Segmentation results.</b></p>
+
 
 ## Citation
 ```
