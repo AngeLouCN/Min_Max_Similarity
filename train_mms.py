@@ -32,24 +32,9 @@ parser.add_argument('--dataset', type=str, default='kvasir', help='dataset name'
 parser.add_argument('--split', type=float, default=1, help='training data ratio')
 parser.add_argument('--momentum', default=0.9, type=float)
 parser.add_argument('--ratio', type=float, default=0.5, help='labeled data ratio')
-parser.add_argument('--consistency', default=1.0, type=float, metavar='WEIGHT', help='use consistency loss with given weight (default: None)')
-parser.add_argument('--consistency_rampup', default=100, type=int, metavar='EPOCHS', help='length of the consistency loss ramp-up')
 opt = parser.parse_args()
 pixel_wise_contrastive_loss_criter = ConLoss()
 contrastive_loss_sup_criter = contrastive_loss_sup()
-
-
-def sigmoid_rampup(current, rampup_length):
-    if rampup_length == 0:
-        return 1.0
-    else:
-        current = np.clip(current, 0.0, rampup_length)
-        phase = 1.0 - current / rampup_length
-        return float(np.exp(-5.0 * phase * phase))
-
-
-def get_current_consistency_weight(epoch):
-    return opt.consistency * sigmoid_rampup(epoch, opt.consistency_rampup)
 
 
 def adjust_lr(optimizer, init_lr, epoch, max_epoch):
@@ -101,9 +86,8 @@ class Network(object):
         
         params = list(self.model_1.parameters()) + list(self.model_2.parameters())
 
-        # optimizer = torch.optim.Adam(params,lr=opt.lr)
-        optimizer = torch.optim.SGD(params, lr=opt.lr,
-                          momentum=0.9, weight_decay=0.0001)
+        optimizer = torch.optim.Adam(params,lr=opt.lr)
+
 
         image_root = './data/'+ opt.dataset +'/train/image/'
         gt_root = './data/'+ opt.dataset +'/train/mask/'
@@ -129,12 +113,7 @@ class Network(object):
             
 
             for i, data in enumerate(zip(train_loader_1, train_loader_2, unlabeled_train_loader)):
-                # if epoch <= 50:
-                #     inputs_S1, labels_S1 = data[0][0], data[0][1]
-                #     inputs_S2, labels_S2 = data[1][0], data[1][1]
-                # if epoch > 50:
-                #     inputs_S2, labels_S2 = data[0][0], data[0][1]
-                #     inputs_S1, labels_S1 = data[1][0], data[1][1]
+
                 inputs_S1, labels_S1 = data[0][0], data[0][1]
                 inputs_S2, labels_S2 = data[1][0], data[1][1]
                 inputs_U, labels_U = data[2][0], data[2][1]
@@ -174,11 +153,10 @@ class Network(object):
                 Loss_diff = loss_diff(u_prediction_1, u_prediction_2, opt.batchsize)
                 Loss_contrast = pixel_wise_contrastive_loss_criter(feat_q,feat_k)
                 Loss_contrast_2 = contrastive_loss_sup_criter(feat_l_q,feat_l_k)
-                # consistency_weight = get_current_consistency_weight(epoch)
                 
 
                 seg_loss = 0.25*Loss_sup +0.25*Loss_diff +0.25*Loss_contrast+0.25*Loss_contrast_2
-                # seg_loss = 0.5*Loss_sup + consistency_weight*(0.25*Loss_diff + 0.125*Loss_contrast + 0.125*Loss_contrast_2)
+                
                 seg_loss.backward()
                 running_loss += seg_loss.item()
                 optimizer.step()

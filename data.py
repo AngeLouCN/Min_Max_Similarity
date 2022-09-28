@@ -6,31 +6,6 @@ import numpy as np
 import torch
 import random
 from gridmask import GridMask
-class Cutout():
-    def __init__(self, num_holes = 8, max_size = 8, fill_value = 0, prob = 1.):
-        self.num_holes = num_holes
-        self.max_size = max_size
-        self.fill_value = fill_value
-        self.prob = prob
-        
-        
-    def __call__(self,img, mask):
-        if random.random()<self.prob:
-            h = img.shape[0]
-            w = img.shape[1]
-            
-            for _ in range(self.num_holes):
-                y = np.random.randint(h)
-                x = np.random.randint(w)
-                
-                y1 = np.clip(max(0,y-self.max_size//2),0,h)
-                y2 = np.clip(max(0,y+self.max_size//2),0,h)
-                x1 = np.clip(max(0,x-self.max_size//2),0,w)
-                x2 = np.clip(max(0,x+self.max_size//2),0,w)
-                
-                img[y1:y2,x1:x2,:] = self.fill_value
-                mask[y1:y2,x1:x2,:] = self.fill_value
-        return img, mask
 
 
 class ObjDataset(data.Dataset):
@@ -43,7 +18,6 @@ class ObjDataset(data.Dataset):
         self.gts = sorted(self.gts)
         self.filter_files()
         self.size = len(self.images)
-        self.cutout = Cutout()
         self.gridmask = GridMask()
         self.img_transform_w = transforms.Compose([
             transforms.Resize((self.trainsize)),
