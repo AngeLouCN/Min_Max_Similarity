@@ -68,8 +68,8 @@ You can change the dataset name in ```test.py``` and run the code.
 ## Citation
 ```
 @article{lou2022min,
-  title={Min-Max Similarity: A Contrastive Learning Based Semi-Supervised Learning Network for Surgical Tools Segmentation},
-  author={Lou, Ange and Yao, Xing and Liu, Ziteng and Noble, Jack},
+  title={Min-Max Similarity: A Contrastive Semi-Supervised Deep Learning Network for Surgical Tools Segmentation},
+  author={Lou, Ange and Tawfik, Kareem and Yao, Xing and Liu, Ziteng and Noble, Jack},
   journal={arXiv preprint arXiv:2203.15177},
   year={2022}
 }
