@@ -27,6 +27,8 @@ We use three dataset to test its performance:
 - Kvasir-instrument
 - EndoVis'17
 - Cochlear Implant
+- RoboTool
+- ART-NET
 
 **File structure**
 ```
