@@ -74,4 +74,5 @@ You can change the dataset name in ```test.py``` and run the code.
   year={2022}
 }
 ```
-
+## Acknowledgement
+Our code is based on the [Duo-SegNet](https://github.com/himashi92/Duo-SegNet), we thank their excellent work and repository.
