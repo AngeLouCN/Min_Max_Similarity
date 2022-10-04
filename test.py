@@ -28,8 +28,8 @@ class Test(object):
     def __init__(self):
         self._init_configure()
         self._init_logger()
-        self.model_1 = preUnet
-        self.model_2 = preUnet
+        self.model_1 = preUnet()
+        self.model_2 = preUnet()
 
     def _init_configure(self):
         with open('configs/config.yml') as fp:
