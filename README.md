@@ -62,7 +62,7 @@ You can change the dataset name in ```test.py``` and run the code.
 
 ## Segmentation Performance
 <div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/seg_result.jpg" width="650" height="550" alt="Result"/></div>
-<p align="center"><b>Fig. 2. Visual segmentation results.</b></p>
+<p align="center"><b>Fig. 2. Visual comparison of our method with state-of-the-art models. Segmentation results are shown for 50% of labeled training data for Kvasir-instrument, EndVis’17, ART-NET and RoboTool, and 2.4% labeled training data for cochlear implant. From left to right are EndoVis’17, Kvasir-instrument, ART-NET, RoboTool, Cochlear implant and region of interest (ROI) of Cochlear implant. </b></p>
 
 
 ## Citation
