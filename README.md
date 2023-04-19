@@ -9,7 +9,7 @@ This repository contains the implementation of a novel contrastive learning base
 
 
 **:fire: NEWS :fire:**
-**The paper has been accepted by IEEE Transactions on Medical Imaging. The early access is available at [Here](https://ieeexplore.ieee.org/document/10098633/keywords#keywords).
+**The paper has been accepted by IEEE Transactions on Medical Imaging.** The early access is available at [Here](https://ieeexplore.ieee.org/document/10098633/keywords#keywords).
 
 ## Environment
 
