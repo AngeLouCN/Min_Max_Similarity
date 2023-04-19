@@ -6,9 +6,10 @@ This repository contains the implementation of a novel contrastive learning base
 
 **:fire: NEWS :fire:**
 **The full paper is available:** [Min-Max Similarity](https://arxiv.org/abs/2203.15177)
+
+
 **:fire: NEWS :fire:**
 **The paper has been accepted by IEEE Transactions on Medical Imaging. The early access is available at [Here](https://ieeexplore.ieee.org/document/10098633/keywords#keywords).
-**:fire: NEWS :fire:**
 
 ## Environment
 
