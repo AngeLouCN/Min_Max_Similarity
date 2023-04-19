@@ -6,6 +6,9 @@ This repository contains the implementation of a novel contrastive learning base
 
 **:fire: NEWS :fire:**
 **The full paper is available:** [Min-Max Similarity](https://arxiv.org/abs/2203.15177)
+**:fire: NEWS :fire:**
+**The paper has been accepted by IEEE Transactions on Medical Imaging. The early access is available at [Here](https://ieeexplore.ieee.org/document/10098633/keywords#keywords).
+**:fire: NEWS :fire:**
 
 ## Environment
 
@@ -67,11 +70,12 @@ You can change the dataset name in ```test.py``` and run the code.
 
 ## Citation
 ```
-@article{lou2022min,
+@article{lou2023min,
   title={Min-Max Similarity: A Contrastive Semi-Supervised Deep Learning Network for Surgical Tools Segmentation},
   author={Lou, Ange and Tawfik, Kareem and Yao, Xing and Liu, Ziteng and Noble, Jack},
-  journal={arXiv preprint arXiv:2203.15177},
-  year={2022}
+  journal={IEEE Transactions on Medical Imaging},
+  year={2023},
+  publisher={IEEE}
 }
 ```
 ## Acknowledgement
