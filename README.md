@@ -3,6 +3,7 @@ A contrastive learning based semi-supervised segmentation network for medical im
 This repository contains the implementation of a novel contrastive learning based semi-segmentation networks to segment the surgical tools.
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/min-max-similarity-a-contrastive-learning/semi-supervised-semantic-segmentation-on-33)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-33?p=min-max-similarity-a-contrastive-learning)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/min-max-similarity-a-contrastive-learning/semi-supervised-semantic-segmentation-on-2017)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-2017?p=min-max-similarity-a-contrastive-learning)
 
 <div align=center><img src="https://github.com/AngeLouCN/Min_Max_Similarity/blob/main/img/architecture.jpg" width="1000" height="450" alt="Result"/></div>
 <p align="center"><b>Fig. 1. The architecture of Min-Max Similarity.</b></p>
